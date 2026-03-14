@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="usuarios">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="usuario" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nombreUsuario">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[a-z][a-zA-Z0-9]{4,14}" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <!-- Obligo que el nombre de usuario tenga que empezar por minuscula y después ponga cualquier alfanumerico como minimo 4 y maximo 14 caracteres-->
+                            <xs:element name="email">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern
+                                            value="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <!-- Obligo que el correo tenga el formato que conocemos con el nombre@dominio.extension , la extension tiene 2 o más letras-->
+                            <xs:element name="telefono">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="[0-9]{3}\s[0-9]{3}\s[0-9]{3}" />
+                                    </xs:restriction> 
+                                </xs:simpleType>
+                            </xs:element>
+                            <!-- Obligo que se ponga en 3 bloques para una mejor visualicación. ejemplo: 691 264 501-->
+                            <xs:element name="codigoPostal">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern
+                                            value="(0[1-9][0-9]{3}|[1-4][0-9]{4}|5[0-2][0-9]{3})" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <!-- Lo he configurado para que solo sean aceptados los codigos postales de españa-->
+                            <xs:element name="contrasena">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern
+                                            value="[a-zA-Z0-9!@#$_\-]{8,}" />
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            </xs:element>
+                            <!-- Obligo que la contraseña tenga minimo 8 caracteres, tenga letras, numero y simbolos permitidos.-->
+                        </xs:sequence>
+                        <xs:attribute name="id" type="xs:string" use="required" />
+                        <!-- Añado el atributo para que el usuario sea identificado por el id-->
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

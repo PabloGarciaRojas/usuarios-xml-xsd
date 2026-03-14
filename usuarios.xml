@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<usuarios xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="usuarios.xsd">
+    
+    <usuario id="001">
+        <nombreUsuario>pablo978</nombreUsuario>
+        <email>garciarojaspablo7@gmail.com</email>
+        <telefono>600 123 456</telefono>
+        <codigoPostal>41400</codigoPostal>
+        <contrasena>Abc12345</contrasena>
+    </usuario>
+
+    <usuario id="002">
+        <nombreUsuario>pabloGarcia</nombreUsuario>
+        <email>pablo.garcia@gmail.com</email>
+        <telefono>912 344 556</telefono>
+        <codigoPostal>41005</codigoPostal>
+        <contrasena>P@ssword2026</contrasena>
+    </usuario>
+</usuarios>
