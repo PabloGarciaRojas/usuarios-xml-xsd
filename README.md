@@ -24,3 +24,4 @@ Restricciones del xsd:
 Enlace para el video de la validación ya que al ser demasiado grande no deja subirlo a GitHub.
 
 https://drive.google.com/file/d/1tMW6GfSVTR7ZX4XXTKgK32owxGcG3Tix/view?usp=sharing
+
