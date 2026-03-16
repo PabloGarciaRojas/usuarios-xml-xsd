@@ -23,5 +23,9 @@ Restricciones del xsd:
 
 Enlace para el video de la validación ya que al ser demasiado grande no deja subirlo a GitHub.
 
+Validacion regex:
 https://drive.google.com/file/d/1tMW6GfSVTR7ZX4XXTKgK32owxGcG3Tix/view?usp=sharing
+
+Validacion xml y xsd:
+https://drive.google.com/file/d/1e8CdFpdLPgTkyHt2mBYS1arLEUlY9ZOV/view?usp=sharing
 
